@@ -100,3 +100,4 @@ generate_overrides_mk .data/platform_app_keys.txt
 # Platform signature
 echo "" >> keys.mk
 echo "PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/voltage-priv/keys/releasekey" >> keys.mk
+echo "PRODUCT_EXTRA_RECOVERY_KEYS += vendor/voltage-priv/keys/releasekey" >> keys.mk
