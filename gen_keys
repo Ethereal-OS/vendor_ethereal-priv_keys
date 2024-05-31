@@ -60,4 +60,4 @@ for index in "${!apexes[@]}"; do
     fi
 done
 echo "" >> keys.mk
-echo "PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey" >> keys.mk
+echo "PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/voltage-priv/keys/releasekey" >> keys.mk
