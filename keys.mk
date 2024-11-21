@@ -101,5 +101,5 @@ PRODUCT_CERTIFICATE_OVERRIDES += \
     CtsCarrierApiTargetPrepApp:cts_uicc_2021.certificate.override \
     CtsCarrierApiTestCases:cts_uicc_2021.certificate.override
 
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/voltage-priv/keys/releasekey
-PRODUCT_EXTRA_RECOVERY_KEYS += vendor/voltage-priv/keys/signed
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/ethereal-priv/keys/releasekey
+PRODUCT_EXTRA_RECOVERY_KEYS += vendor/ethereal-priv/keys/signed
