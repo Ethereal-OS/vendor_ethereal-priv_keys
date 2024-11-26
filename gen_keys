@@ -56,9 +56,9 @@ for apex in $(cat .data/apex_keys.txt); do
     # AVB Keys
     if [ ! -f ${avbpubkey_file} ] && [ ! -f ${pubkey_file} ]; then
         if [ ${apex} == "com.android.vndk" ]; then
-            avbtool extract_public_key --key ${key_apex} --output ${pubkey_file}
+            ../../../external/avb/avbtool.py extract_public_key --key ${key_apex} --output ${pubkey_file}
         else
-            avbtool extract_public_key --key ${key_apex} --output ${avbpubkey_file}
+            ../../../external/avb/avbtool.py extract_public_key --key ${key_apex} --output ${avbpubkey_file}
         fi
     fi
     # Certificates
